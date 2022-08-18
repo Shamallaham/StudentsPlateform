@@ -1,0 +1,52 @@
+﻿@using TCC.BackEnd;
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+
+
+    <div class="navbar navbar-fixed-top">
+        <div class="topnav">
+
+            @Html.ActionLink("TCC", "Index", "Home")
+
+            <div class="topnav-right">
+                @{
+                    var check = Session["Logged"] as User;
+                    if (check != null && check.SpecializationID == 1)
+                    {
+                        @Html.ActionLink("Logout", "Logout", "Account")
+                        @Html.ActionLink("Control Panel", "ControlPanel", "Account")
+                    }
+                    else if (check != null)
+                    {
+                        @Html.ActionLink("Logout", "Logout", "Account")
+                    }
+                    else
+                    {
+
+                        @Html.ActionLink("Login", "Login", "Account")
+                    }
+                }
+            </div>
+        </div>
+
+    </div>
+
+    <div >
+        @RenderBody()
+    </div>
+
+    <div id="footer">
+        <p >&copy; @DateTime.Now.Year - SEZARD TCC</p>
+    </div>
+            
+        
+</body>
+</html>

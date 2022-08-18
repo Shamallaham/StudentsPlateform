@@ -1,0 +1,291 @@
+﻿body {
+    background-color: #5b9ffa;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+/*========================================================================================*/
+
+
+/*Home*/
+#Paragraph_mian {
+    background-color: #5b9ffa;
+    border-color: #5b9ffa;
+    color: white;
+    margin-left: 150px;
+    margin-top: 80px;
+    font-size: 70px;
+    font-family: Bebas;
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/Bebas.otf') format('opentype');
+}
+#Paragraph {
+    background-color: #5b9ffa;
+    border-color: #5b9ffa;
+    margin-left: 150px;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Segoe UI;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/Segoe UI.ttf') format('truetype');
+}
+
+#footer {
+    margin-right: 15px;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 100% auto;
+    right: 0%;
+    left: 89% auto;
+    bottom: 0%;
+}
+
+#imageHome {
+    width: 600px;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    left: 55%;
+    bottom: 00%;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+        .topnav a:hover {
+            background-color: rgba(0, 0, 0, 0.20)
+        }
+
+.topnav-right a {
+    float: right;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+/*========================================================================================*/
+
+
+/*Login*/
+.main {
+    background-color: #FFFFFF;
+    width: 350px;
+    height: 350px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+    padding-top: 40px;
+    margin-bottom: 25PX;
+    color: #8C55AA;
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu.ttf') format('truetype');
+}
+form.form1 {
+    padding-top: 40px;
+}
+
+.pass {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Ubuntu, sans-serif;
+}
+
+    .pass:focus {
+        border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    }
+
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #9C27B0, #E040FB);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: Ubuntu, sans-serif;
+    margin-left: 35%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+
+/*========================================================================================*/
+
+
+/*Contlor Panle*/
+.container {
+    width: 250px;
+    height: 170px;
+    perspective: 800px;
+    border-radius: 4px;
+    margin: 25px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 6px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    background: #fff;
+}
+
+    .card a {
+        float: left;
+        color: #47525D;
+        text-align: center;
+        text-decoration: none;
+        font-size: 22px;
+        padding-right: 83px;
+        padding-left: 83px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+#PMcontol {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 55px;
+    font-family: Bebas;
+}
+
+#Pcontol {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+#cardUser a {
+    padding-left: 96px;
+    padding-right: 96px;
+}
+
+#cardSpecializations a {
+    padding-left: 52px;
+    padding-right: 52px;
+}
+
+
+
+
+
+
+
+
+
+/*الجداول*/
+.wrap-table100 {
+    width: 1170px;
+}
+
+.table {
+   
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+    .table thead tr {
+        height: 60px;
+        background: #36304a;
+    }
+
+
+.table100-head th {
+    text-align: center;
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+.tapleTD tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+/*مسؤل عن شكل الكتابة داخل الجدول*/
+.tapleTD tr {
+    text-align: center;
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.2;
+    font-weight: unset;
+}
+    .tapleTD tr:hover {
+        color: #555555;
+        background-color: #c8b6ff;
+    }
+.creat a {
+    float: left;
+    margin-left:10px;
+    margin-bottom:5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+
+
+
+

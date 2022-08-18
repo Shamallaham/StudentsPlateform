@@ -1,0 +1,99 @@
+﻿@model TCC.BackEnd.User
+@{
+    ViewBag.Title = "Create User";
+    Layout = "~/Views/Shared/_LayoutCreate.cshtml";
+}
+
+
+<div class="wrapper">
+    <div class="inner">
+        <img src="~/Images/create1.png" alt="" class="image-1" />
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <h3>Create User</h3>
+
+
+            <center>
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </center>
+            <div class="form-holder">
+                <span class="lnr lnr-user"></span>
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Name" } })
+            </div>
+            <center>
+                @Html.ValidationMessageFor(model => model.Nickname, "", new { @class = "text-danger" })
+            </center>
+            <div class="form-holder">
+                <span class="lnr lnr-phone-handset"></span>
+                @Html.EditorFor(model => model.Nickname, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Nickname" } })
+
+            </div>
+            <center>
+                @Html.ValidationMessageFor(model => model.Mother, "", new { @class = "text-danger" })
+            </center>
+            <div class="form-holder">
+                <span class="lnr lnr-envelope"></span>
+                @Html.EditorFor(model => model.Mother, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Name Mother" } })
+            </div>
+            <center>
+                @Html.ValidationMessageFor(model => model.Father, "", new { @class = "text-danger" })
+            </center>
+            <div class="form-holder">
+                <span class="lnr lnr-lock"></span>
+                @Html.EditorFor(model => model.Father, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Name Father" } })
+            </div>
+            <center>
+                @Html.ValidationMessageFor(model => model.BirthDate, "", new { @class = "text-danger" })
+            </center>
+            <div class="form-holder">
+                <span class="lnr lnr-lock"></span>
+                @Html.EditorFor(model => model.BirthDate, new { htmlAttributes = new { @class = "form-control", min = "1960-12-30", max = "2003-12-30" } })
+            </div>
+            <center>
+                @Html.ValidationMessageFor(model => model.SpecializationID, "", new { @class = "text-danger" })
+            </center>
+            <div class="form-holder">
+                <span class="lnr lnr-lock"></span>
+                @Html.DropDownList("SpecializationID", null, htmlAttributes: new { @class = "form-control" })
+            </div>
+            <center>
+                @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+            </center>
+            <div class="form-holder">
+                <span class="lnr lnr-lock"></span>
+                @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Phone" } })
+            </div>
+            <center>
+
+                <div class="text-danger" style="font-size:20px;">
+                    @Html.ViewBag.erorr
+                </div>
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </center>
+            <div class="form-holder">
+                <span class="lnr lnr-lock"></span>
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Email" } })
+            </div>
+            <center>
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </center>
+            <div class="form-holder">
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Password" } })
+                <span class="lnr lnr-lock"></span>
+            </div>
+            <button>
+                <span>Create</span>
+            </button>
+            <center>
+                <div style="margin-top:10px;">
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            </center>
+        }
+
+        <img src="~/Images/create2.png" alt="" class="image-2" />
+    </div>
+
+</div>

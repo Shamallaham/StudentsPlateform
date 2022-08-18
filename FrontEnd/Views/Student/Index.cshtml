@@ -1,0 +1,57 @@
+﻿@model IEnumerable<TCC.BackEnd.Subject>
+
+@{
+    ViewBag.Title = "View Student";
+}
+
+<center>
+    <br />
+    <div class="wrap-table100">
+        <div class="table100">
+            <table class="table">
+                <thead>
+                    <tr class="table100-head">
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Description)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Teacher)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Specialization.Name)
+                        </th>
+                        <th></th>
+                    </tr>
+
+                </thead>
+                <tbody class="tapleTD">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Description)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Teacher)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Specialization.Name)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Details", "Details", new { id = item.ID })
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</center>
+

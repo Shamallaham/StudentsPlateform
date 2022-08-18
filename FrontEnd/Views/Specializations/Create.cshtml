@@ -1,0 +1,45 @@
+﻿@model TCC.BackEnd.Specialization
+
+@{
+    ViewBag.Title = "Create Specialization";
+
+    Layout = "~/Views/Shared/_LayoutCreate.cshtml";
+}
+
+
+<div class="wrapper">
+    <div class="inner">
+        <img src="~/Images/create1.png" alt="" class="image-1" />
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+        <h3>Create Specialization</h3>
+
+            <div class="text-danger">
+                @Html.ViewBag.erorr
+            </div>
+
+            <center>
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </center>
+            <div class="form-holder">
+                <span class="lnr lnr-user"></span>
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Name Specialization" } })
+            </div>
+
+
+            <button type="submit">
+                <span>Create</span>
+            </button>
+            <center>
+                <div style="margin-top:10px;">
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            </center>
+        }
+
+        <img src="~/Images/create2.png" alt="" class="image-2" />
+    </div>
+
+</div>

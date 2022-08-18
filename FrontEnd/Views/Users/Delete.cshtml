@@ -1,0 +1,107 @@
+﻿@model TCC.BackEnd.User
+
+@{
+    ViewBag.Title = "Delete User";
+    Layout = "~/Views/Shared/_LayoutCreate.cshtml";
+}
+
+<div class="wrapper">
+    <div class="inner">
+        <img src="~/Images/create1.png" alt="" class="image-1" />
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <h3>Delete User</h3>
+
+
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Nickname)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Nickname)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Mother)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Mother)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Father)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Father)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Specialization.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Specialization.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.BirthDate)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BirthDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Phone)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Password)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Password)
+                </dd>
+
+            </dl>
+            <button type="submit">
+                <span>Delete</span>
+            </button>
+            <center>
+                <div style="margin-top:10px;">
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            </center>
+        }
+
+        <img src="~/Images/create2.png" alt="" class="image-2" />
+    </div>
+
+</div>
+
+

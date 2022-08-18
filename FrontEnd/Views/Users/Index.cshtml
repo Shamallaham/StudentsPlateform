@@ -1,0 +1,91 @@
+﻿@model IEnumerable<TCC.BackEnd.User>
+
+@{
+    ViewBag.Title = "View User";
+}
+
+
+<center>
+    <br />
+    <div class="wrap-table100">
+        <div class="table100">
+            <table class="table">
+
+                <div class="creat">
+                    @Html.ActionLink("Create User", "Create")
+                </div>
+                <thead>
+                    <tr class="table100-head">
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Nickname)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Mother)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Father)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Specialization.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.BirthDate)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Phone)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Password)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="tapleTD">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nickname)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Mother)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Father)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Specialization.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.BirthDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Phone)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Email)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Password)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</center>
+

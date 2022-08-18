@@ -1,0 +1,28 @@
+﻿@model TCC.FrontEnd.Models.LoginModel
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="main">
+    <p class="sign" align="center">Login</p>
+    <p align = "center">
+        @ViewBag.Message
+    </p>
+    <div class="form1">
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            @Html.TextBoxFor(m => m.Email, new { @class = "pass", placeholder = "Email"})
+            <br /><center>
+                 @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </center>
+        <br />
+        @Html.PasswordFor(m => m.Password, new { @class = "pass", placeholder = "Password" })
+        <br /><center>
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+        </center>
+        <br />
+        <button type="submit" class="submit" align="center">Login</button>
+        }
+</div>
+</div>
+
