@@ -1,0 +1,12 @@
+C:\Users\SEZARD\Desktop\TCC\TCC.BackEnd\bin\Debug\TCC.BackEnd.pdb
+C:\Users\SEZARD\Desktop\TCC\TCC.BackEnd\bin\Debug\EntityFramework.dll
+C:\Users\SEZARD\Desktop\TCC\TCC.BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SEZARD\Desktop\TCC\TCC.BackEnd\bin\Debug\EntityFramework.xml
+C:\Users\SEZARD\Desktop\TCC\TCC.BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SEZARD\Desktop\TCC\TCC.BackEnd\obj\Debug\TCC.BackEnd.csprojAssemblyReference.cache
+C:\Users\SEZARD\Desktop\TCC\TCC.BackEnd\obj\Debug\TCC.BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\SEZARD\Desktop\TCC\TCC.BackEnd\obj\Debug\TCC.BackEnd.csproj.CopyComplete
+C:\Users\SEZARD\Desktop\TCC\TCC.BackEnd\obj\Debug\TCC.BackEnd.pdb
+C:\Users\SEZARD\Desktop\TCC\TCC.BackEnd\bin\Debug\TCC.BackEnd.dll.config
+C:\Users\SEZARD\Desktop\TCC\TCC.BackEnd\bin\Debug\TCC.BackEnd.dll
+C:\Users\SEZARD\Desktop\TCC\TCC.BackEnd\obj\Debug\TCC.BackEnd.dll
